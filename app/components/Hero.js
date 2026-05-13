@@ -140,7 +140,7 @@ export default function Hero() {
 
         {/* Description */}
         <p
-          className="mx-auto mb-10 max-w-2xl text-base leading-relaxed text-muted sm:text-lg"
+          className="mx-auto mb-10 max-w-3xl text-base leading-8 text-muted sm:text-lg"
           style={{ animation: "slide-up 0.8s ease forwards 0.6s", opacity: 0 }}
         >
           I craft robust, scalable applications with Python and modern

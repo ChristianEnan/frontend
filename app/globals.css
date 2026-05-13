@@ -198,7 +198,10 @@ body {
 .section-subheading {
   font-size: 1.1rem;
   color: var(--color-muted);
-  max-width: 600px;
+  max-width: 720px;
+  line-height: 1.8;
+  margin-top: 0.75rem;
+  text-wrap: balance;
 }
 
 /* ===== Animations ===== */
