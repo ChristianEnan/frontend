@@ -140,7 +140,7 @@ export default function Skills() {
 
         {/* Technology Marquee */}
         <div className="reveal mt-16 overflow-hidden">
-          <div className="flex gap-4" style={{ animation: "marquee 30s linear infinite" }}>
+          <div className="flex gap-4 animate-marquee">
             {[
               "Python",
               "Django",
@@ -195,17 +195,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes marquee {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-      `}</style>
     </section>
   );
 }
