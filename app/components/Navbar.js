@@ -57,12 +57,12 @@ export default function Navbar() {
         </a>
 
         {/* Desktop Links */}
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="hidden items-center gap-4 md:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className={`relative px-4 py-2 text-sm font-medium transition-colors duration-300 ${
+              className={`relative px-3 py-2 text-sm font-medium transition-colors duration-300 ${
                 activeSection === link.href.replace("#", "")
                   ? "text-primary-light"
                   : "text-muted hover:text-foreground"

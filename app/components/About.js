@@ -34,19 +34,19 @@ export default function About() {
       {/* Background */}
       <div className="absolute inset-0 bg-dots opacity-30" />
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-7xl px-4 lg:px-6">
         {/* Section Title */}
-        <div className="reveal mb-16 text-center">
+        <div className="reveal mb-16 text-center lg:text-left">
           <span className="mb-3 inline-block text-sm font-semibold tracking-widest uppercase text-primary-light">
             About Me
           </span>
           <h2 className="section-heading gradient-text">Who I Am</h2>
-          <p className="section-subheading mx-auto">
+          <p className="section-subheading mx-auto lg:mx-0 lg:max-w-lg">
             Get to know the person behind the code
           </p>
         </div>
 
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="grid gap-12 lg:grid-cols-3 lg:gap-16 items-start">
           {/* Image / Visual Side */}
           <div className="reveal-left flex items-center justify-center">
             <div className="relative">
@@ -84,18 +84,18 @@ export default function About() {
           </div>
 
           {/* Text Side */}
-          <div className="reveal-right flex flex-col justify-center">
+          <div className="reveal-right flex flex-col justify-center max-w-xl lg:text-left">
             <h3 className="mb-4 text-2xl font-bold text-foreground">
               Building the Future with{" "}
               <span className="gradient-text">Python</span>
             </h3>
-            <p className="mb-4 leading-relaxed text-muted">
+            <p className="mb-4 leading-relaxed text-muted text-justify">
               I&apos;m a passionate Python Developer with expertise in building
               scalable applications, REST APIs, and automation tools. With a
               strong foundation in software engineering principles, I love
               turning complex problems into elegant solutions.
             </p>
-            <p className="mb-8 leading-relaxed text-muted">
+            <p className="mb-8 leading-relaxed text-muted text-justify">
               When I&apos;m not coding, you can find me exploring new
               technologies, contributing to open source projects, or sharing my
               knowledge through blog posts and community contributions. I
@@ -104,20 +104,20 @@ export default function About() {
             </p>
 
             {/* Quick Info */}
-            <div className="mb-8 grid grid-cols-2 gap-4">
+            <div className="mb-8 grid grid-cols-2 gap-4 items-start">
               {[
-                { icon: "📍", label: "Location", value: "Your City" },
-                { icon: "📧", label: "Email", value: "enan@example.com" },
-                { icon: "🎓", label: "Degree", value: "Computer Science" },
+                { icon: "📍", label: "Location", value: "Ahmedabad, Gujarat" },
+                { icon: "📧", label: "Email", value: "enanchristian15@gmail.com" },
+                { icon: "🎓", label: "Degree", value: "Information Technology" },
                 { icon: "💼", label: "Freelance", value: "Available" },
               ].map((info) => (
-                <div key={info.label} className="flex items-center gap-3">
-                  <span className="text-lg">{info.icon}</span>
-                  <div>
+                <div key={info.label} className="flex items-start gap-3 w-full">
+                  <span className="text-lg mt-1">{info.icon}</span>
+                  <div className="min-w-0">
                     <p className="text-xs font-medium text-muted">
                       {info.label}
                     </p>
-                    <p className="text-sm font-semibold text-foreground">
+                    <p className="text-sm font-semibold text-foreground truncate">
                       {info.value}
                     </p>
                   </div>
@@ -125,7 +125,7 @@ export default function About() {
               ))}
             </div>
 
-            <a href="/resume.pdf" target="_blank" className="btn-primary w-fit">
+            <a href="/resume.pdf" target="_blank" className="btn-primary w-fit self-start mt-1">
               <span>Download Resume</span>
               <svg
                 className="relative z-10 h-5 w-5"
@@ -142,22 +142,22 @@ export default function About() {
               </svg>
             </a>
           </div>
-        </div>
 
-        {/* Stats */}
-        <div className="reveal mt-20 grid grid-cols-2 gap-6 sm:grid-cols-4">
-          {stats.map((stat, i) => (
-            <div
-              key={stat.label}
-              className="glass-card p-6 text-center"
-              style={{ transitionDelay: `${i * 100}ms` }}
-            >
-              <p className="mb-1 text-3xl font-extrabold gradient-text">
-                {stat.value}
-              </p>
-              <p className="text-sm font-medium text-muted">{stat.label}</p>
-            </div>
-          ))}
+          {/* Stats Column (large screens) */}
+          <div className="reveal mt-6 lg:mt-0 flex flex-col gap-4">
+            {stats.map((stat, i) => (
+              <div
+                key={stat.label}
+                className="glass-card p-4 text-center w-48 lg:w-40 lg:text-left"
+                style={{ transitionDelay: `${i * 80}ms` }}
+              >
+                <p className="mb-1 text-2xl font-extrabold gradient-text">
+                  {stat.value}
+                </p>
+                <p className="text-sm font-medium text-muted">{stat.label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
