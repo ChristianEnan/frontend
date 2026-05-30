@@ -46,7 +46,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid gap-12 lg:grid-cols-3 lg:gap-16 items-start">
+        <div className="grid gap-12 lg:gap-16 items-start lg:[grid-template-columns:1fr_1.4fr_240px]">
           {/* Image / Visual Side */}
           <div className="reveal-left flex items-center justify-center">
             <div className="relative">
@@ -84,7 +84,7 @@ export default function About() {
           </div>
 
           {/* Text Side */}
-          <div className="reveal-right flex flex-col justify-center max-w-xl lg:text-left">
+          <div className="reveal-right flex flex-col justify-center max-w-xl lg:text-left lg:ml-12">
             <h3 className="mb-4 text-2xl font-bold text-foreground">
               Building the Future with{" "}
               <span className="gradient-text">Python</span>
