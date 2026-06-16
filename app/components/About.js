@@ -40,7 +40,7 @@ export default function About() {
           <span className="mb-3 inline-block text-sm font-semibold tracking-widest uppercase text-primary-light">
             About Me
           </span>
-          <h2 className="section-heading gradient-text">Who I Am</h2>
+          <h2 className="section-heading gradient-text break-words lg:max-w-2xl">Who I Am</h2>
           <p className="section-subheading mx-auto lg:mx-0 lg:max-w-lg">
             Get to know the person behind the code
           </p>
@@ -117,7 +117,7 @@ export default function About() {
                     <p className="text-xs font-medium text-muted">
                       {info.label}
                     </p>
-                    <p className="text-sm font-semibold text-foreground truncate">
+                    <p className="text-sm font-semibold text-foreground break-words whitespace-normal">
                       {info.value}
                     </p>
                   </div>

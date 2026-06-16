@@ -117,7 +117,7 @@ export default function Hero() {
 
         {/* Name */}
         <h1
-          className="mb-4 text-5xl font-extrabold leading-tight tracking-tight sm:text-6xl md:text-7xl lg:text-8xl"
+          className="mb-6 text-5xl font-extrabold leading-tight tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
           style={{ animation: "slide-up 0.8s ease forwards 0.2s", opacity: 0 }}
         >
           <span className="text-foreground">Hi, I&apos;m </span>
@@ -128,19 +128,19 @@ export default function Hero() {
 
         {/* Typewriter Role */}
         <div
-          className="mb-6 flex items-center justify-center gap-3"
+          className="mb-8 flex items-center justify-center gap-4"
           style={{ animation: "slide-up 0.8s ease forwards 0.4s", opacity: 0 }}
         >
-          <span className="h-px w-8 bg-gradient-to-r from-transparent to-primary" />
-          <p className="text-lg font-medium tracking-wide text-muted sm:text-xl md:text-2xl">
+          <span className="h-px w-12 bg-gradient-to-r from-transparent to-primary" />
+          <p className="text-lg font-semibold tracking-wide text-muted sm:text-xl md:text-2xl">
             Python Developer & Software Engineer
           </p>
-          <span className="h-px w-8 bg-gradient-to-l from-transparent to-primary" />
+          <span className="h-px w-12 bg-gradient-to-l from-transparent to-primary" />
         </div>
 
         {/* Description */}
         <p
-          className="mx-auto mb-10 max-w-3xl text-base leading-8 text-muted sm:text-lg"
+          className="mx-auto mb-12 max-w-3xl text-base leading-relaxed text-muted sm:text-lg"
           style={{ animation: "slide-up 0.8s ease forwards 0.6s", opacity: 0 }}
         >
           I craft robust, scalable applications with Python and modern
