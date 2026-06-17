@@ -34,7 +34,10 @@ export default function About() {
       {/* Background */}
       <div className="absolute inset-0 bg-dots opacity-30" />
 
-      <div className="relative mx-auto max-w-7xl px-4 lg:px-6">
+      <div
+        className="relative mx-auto max-w-7xl"
+        style={{ paddingInline: "24px" }}
+      >
         {/* Section Title */}
         <div className="reveal mb-16 text-center lg:text-left">
           <span className="mb-3 inline-block text-sm font-semibold tracking-widest uppercase text-primary-light">
@@ -46,14 +49,14 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid gap-12 lg:gap-16 items-start lg:[grid-template-columns:1fr_1.4fr_240px]">
+        <div className="grid items-start gap-10 lg:grid-cols-2 xl:gap-16 xl:[grid-template-columns:minmax(0,1fr)_minmax(0,1.25fr)_220px]">
           {/* Image / Visual Side */}
           <div className="reveal-left flex items-center justify-center">
             <div className="relative">
               {/* Decorative frame */}
               <div className="absolute -inset-4 rounded-2xl bg-gradient-to-br from-primary/20 via-secondary/10 to-accent/20 opacity-60 blur-xl" />
               <div className="relative overflow-hidden rounded-2xl border border-border">
-                <div className="relative flex h-80 w-80 items-center justify-center bg-surface sm:h-96 sm:w-96">
+                <div className="relative flex h-72 w-72 items-center justify-center bg-surface sm:h-80 sm:w-80 xl:h-96 xl:w-96">
                   {/* Abstract code visual */}
                   <div className="absolute inset-0 bg-grid opacity-20" />
                   <div className="relative z-10 text-center">
@@ -84,7 +87,7 @@ export default function About() {
           </div>
 
           {/* Text Side */}
-          <div className="reveal-right flex flex-col justify-center max-w-xl lg:text-left lg:ml-12">
+          <div className="reveal-right flex max-w-xl min-w-0 flex-col justify-center lg:text-left xl:ml-10">
             <h3 className="mb-4 text-2xl font-bold text-foreground">
               Building the Future with{" "}
               <span className="gradient-text">Python</span>
@@ -144,11 +147,11 @@ export default function About() {
           </div>
 
           {/* Stats Column (large screens) */}
-          <div className="reveal mt-6 lg:mt-0 flex flex-col gap-4">
+          <div className="reveal mt-2 flex flex-col gap-4 lg:col-span-2 lg:mt-0 lg:flex-row lg:flex-wrap xl:col-span-1 xl:flex-col">
             {stats.map((stat, i) => (
               <div
                 key={stat.label}
-                className="glass-card p-4 text-center w-48 lg:w-40 lg:text-left"
+                className="glass-card w-full p-4 text-center sm:w-[calc(50%-0.5rem)] lg:w-[calc(50%-0.5rem)] xl:w-40 xl:text-left"
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
                 <p className="mb-1 text-2xl font-extrabold gradient-text">

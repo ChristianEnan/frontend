@@ -100,7 +100,10 @@ export default function Hero() {
       <div className="bg-grid absolute inset-0 opacity-40" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6 text-center">
+      <div
+        className="relative z-10 mx-auto max-w-7xl text-center"
+        style={{ paddingInline: "24px" }}
+      >
         {/* Status Badge */}
         <div
           className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-5 py-2"
@@ -117,7 +120,7 @@ export default function Hero() {
 
         {/* Name */}
         <h1
-          className="mb-6 text-5xl font-extrabold leading-tight tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl"
+          className="mb-6 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl"
           style={{ animation: "slide-up 0.8s ease forwards 0.2s", opacity: 0 }}
         >
           <span className="text-foreground">Hi, I&apos;m </span>

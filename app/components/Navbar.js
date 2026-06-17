@@ -45,7 +45,10 @@ export default function Navbar() {
           : "py-5"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 sm:px-8">
+      <div
+        className="mx-auto flex max-w-7xl items-center justify-between"
+        style={{ paddingInline: "24px" }}
+      >
         {/* Logo */}
         <a
           href="#home"

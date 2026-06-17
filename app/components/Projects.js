@@ -101,7 +101,10 @@ export default function Projects() {
     >
       <div className="absolute inset-0 bg-dots opacity-20" />
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div
+        className="relative mx-auto max-w-7xl"
+        style={{ paddingInline: "24px" }}
+      >
         {/* Section Title */}
         <div className="reveal mb-12 text-center">
           <span className="mb-3 inline-block text-sm font-semibold tracking-widest uppercase text-primary-light">

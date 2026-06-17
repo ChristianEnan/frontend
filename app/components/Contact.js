@@ -57,7 +57,10 @@ export default function Contact() {
   return (
     <section id="contact" ref={sectionRef} className="relative py-24 sm:py-32">
       <div className="absolute inset-0 bg-dots opacity-20" />
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div
+        className="relative mx-auto max-w-7xl"
+        style={{ paddingInline: "24px" }}
+      >
         <div className="reveal mb-16 text-center">
           <span className="mb-3 inline-block text-sm font-semibold tracking-widest uppercase text-primary-light">Contact</span>
           <h2 className="section-heading gradient-text">Get In Touch</h2>
