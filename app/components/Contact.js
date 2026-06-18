@@ -49,9 +49,9 @@ export default function Contact() {
   const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const contactInfo = [
-    { icon: "📧", label: "Email", value: "enan@example.com", href: "mailto:enan@example.com" },
-    { icon: "📍", label: "Location", value: "Your City, Country", href: "#" },
-    { icon: "📱", label: "Phone", value: "+1 (555) 123-4567", href: "tel:+15551234567" },
+    { icon: "📧", label: "Email", value: "enanchristian15@gmail.com", href: "mailto:enanchristian15@gmail.com" },
+    { icon: "📍", label: "Location", value: "Ahmedabad, Gujarat", href: "#" },
+    { icon: "📱", label: "Phone", value: "+91 7046******", href: "tel:+917046000000" },
   ];
 
   return (
@@ -84,18 +84,6 @@ export default function Contact() {
                   </div>
                 </a>
               ))}
-            </div>
-
-            {/* Social Links */}
-            <div className="mt-10">
-              <p className="mb-4 text-sm font-semibold text-muted">Follow Me</p>
-              <div className="flex gap-3">
-                {["GitHub", "LinkedIn", "Twitter"].map((s) => (
-                  <a key={s} href="#" className="flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-surface/50 text-muted transition-all hover:-translate-y-1 hover:border-primary/40 hover:text-primary-light">
-                    <span className="text-sm font-bold">{s[0]}</span>
-                  </a>
-                ))}
-              </div>
             </div>
           </div>
 
